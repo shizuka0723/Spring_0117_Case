@@ -3,25 +3,24 @@
 <html lang="en">
     <head>
         <!-- Head -->
-        <%@include file="/WEB-INF/jsp/include/head.jspf"  %>
+        <%@include file="include/head.jspf"  %>
     </head>
     <body>
 
         <div id="layout">
             <!-- Toggle -->
-            <%@include file="/WEB-INF/jsp/include/toggle.jspf" %>
+            <%@include file="include/toggle.jspf" %>
 
             <!-- Menu -->
-            <%@include file="/WEB-INF/jsp/include/menu.jspf" %>
-            
+            <%@include file="include/menu.jspf" %>
             <div id="main">
                 <div class="header">
-                    <h1>Sales</h1>
-                    <h2>derby sample tables</h2>
+                    <h1>Mirco Market</h1>
+                    <h2>市場區域維護</h2>
                 </div>
             </div>
         </div>
         <!-- Foot -->
-        <%@include file="/WEB-INF/jsp/include/foot.jspf" %>
+        <%@include file="include/foot.jspf" %>
     </body>
 </html>
