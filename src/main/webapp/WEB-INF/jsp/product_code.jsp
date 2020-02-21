@@ -9,18 +9,22 @@
 
         <div id="layout">
             <!-- Toggle -->
-            <%@include file="include/toggle.jspf" %>
+            <%@include file="include/toggle.jspf"  %>
 
             <!-- Menu -->
-            <%@include file="include/menu.jspf" %>
+            <%@include file="include/menu.jspf"  %>
+
             <div id="main">
                 <div class="header">
-                    <h1>Mirco Market</h1>
-                    <h2>市場區域維護</h2>
+                    <h1>Product Code</h1>
+                    <h2>商品分類</h2>
                 </div>
+
             </div>
         </div>
+
         <!-- Foot -->
-        <%@include file="include/foot.jspf" %>
+        <%@include file="include/foot.jspf"  %>
+
     </body>
 </html>

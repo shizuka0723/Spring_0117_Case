@@ -4,11 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/mirco_market")
-public class MircoMarketController {
+@RequestMapping("/purchase_order")
+public class PurchaseOrderController {
     
     @RequestMapping("/input")
     public String input(){
-        return "mirco_market";
+        return "purchase_order";
     }
 }

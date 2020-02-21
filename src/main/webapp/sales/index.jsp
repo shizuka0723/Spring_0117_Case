@@ -19,6 +19,7 @@
                     <h1>Sales</h1>
                     <h2>derby sample tables</h2>
                 </div>
+                <img src="/case/images/derby.png" >
             </div>
         </div>
         <!-- Foot -->
