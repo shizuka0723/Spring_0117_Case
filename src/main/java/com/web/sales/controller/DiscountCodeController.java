@@ -1,7 +1,7 @@
 package com.web.sales.controller;
 
 import com.web.sales.models.DiscountCode;
-import com.web.sales.service.DiscountCodeService;
+import com.web.sales.services.DiscountCodeService;
 import com.web.sales.validate.DiscountCodeValidate;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
