@@ -16,17 +16,20 @@ public class DiscountCodeRepository implements CrudRepository<DiscountCode, Stri
 
     @Override
     public void save(DiscountCode entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String sql = "INSERT INTO DISCOUNT_CODE(DISCOUNT_CODE,RATE) VALUES(?,?)";
+        jdbcTemplate.update(sql,entity.getDiscountCode(),entity.getRate());
     }
 
     @Override
     public Optional<DiscountCode> findById(String id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String sql = "SELECT * FROM DISCOUNT_CODE WHERE DISCOUNT_CODE = ?";
+        DiscountCode dc = jdbcTemplate.queryForObject(sql, new Object[]{id},new BeanPropertyRowMapper<DiscountCode>(DiscountCode.class));
+        return Optional.of(dc);
     }
 
     @Override
     public boolean existsById(String id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return findById(id).isPresent();
     }
 
     @Override
@@ -38,12 +41,14 @@ public class DiscountCodeRepository implements CrudRepository<DiscountCode, Stri
 
     @Override
     public void deleteById(String id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String sql = "DELETE FROM DISCOUNT_CODE WHERE DISCOUNT_CODE = ?";
+        jdbcTemplate.update(sql,id);
     }
 
     @Override
     public void update(DiscountCode entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String sql = "UPDATE DISCOUNT_CODE SET RATE = ? WHERE DISCOUNT_CODE = ?";
+        jdbcTemplate.update(sql, entity.getRate(),entity.getDiscountCode());
     }
     
     
