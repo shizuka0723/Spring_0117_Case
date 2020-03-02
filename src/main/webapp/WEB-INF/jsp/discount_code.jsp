@@ -36,6 +36,7 @@
                                     <form:input path="rate" placeholder="折扣" /><p />
 
                                     <button type="submit" class="pure-button pure-button-primary">${action}</button>
+                                    <form:errors path="*" style="color:red"/>
                                 </fieldset>
                             </form:form>
                         </div>
