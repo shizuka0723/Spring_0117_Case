@@ -26,7 +26,5 @@ public class DiscountCode {
     public String getLabel() {
         return discountCode + " : " + rate;
     }
-    
-    
-    
+
 }
