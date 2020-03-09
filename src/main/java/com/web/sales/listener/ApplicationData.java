@@ -24,6 +24,7 @@ public class ApplicationData implements ServletContextListener{
         menus.put("product_code.jsp", new String[]{"/mvc/product_code/input", "商品分類"});
         menus.put("product.jsp", new String[]{"/mvc/product/input", "商品資料"});
         menus.put("purchase_order.jsp", new String[]{"/mvc/purchase_order/input", "採購訂單"});
+        menus.put("report.jsp", new String[]{"/mvc/report/", "報表分析"});
         sce.getServletContext().setAttribute("menus", menus);
     }
     

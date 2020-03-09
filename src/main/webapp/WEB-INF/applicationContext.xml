@@ -23,7 +23,7 @@
     <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
         <property name="formatters">
             <list>
-                <bean class="org.springframework.format.datetime.DateFormatter" p:pattern="yyyy/MM/dd"></bean>
+                <bean class="org.springframework.format.datetime.DateFormatter" p:pattern="yyyy-MM-dd"></bean>
             </list>
         </property>
     </bean>
